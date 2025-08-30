@@ -1,0 +1,33 @@
+import Nav from "@/components/Nav";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Awards from "@/components/Awards"
+import CTA from "@/components/CTA";
+import CalendlyEmbed from "@/components/CalendlyEmbed";
+import Footer from "@/components/Footer";
+import FloatingChat from "@/components/FloatingChat";
+import { CONTACT } from "@/lib/links";
+
+export default function Home() {
+  return (
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <section id="about" className="container-p py-12">
+          <h2 className="text-3xl font-black">We blend creative and performance</h2>
+          <p className="mt-4 text-gray-600 max-w-3xl">
+            Not many creative agencies understand performance, and not many performance agencies understand creative.
+            This is where we're different. Whether we're growing your communities, delivering performance-driven Paid Media,
+            or producing social-first Creative — everything is backed by data and insight.
+          </p>
+        </section>
+        <Services />
+        <Awards />
+        <CTA />
+      </main>
+      <Footer />
+      <FloatingChat />
+    </>
+  );
+}
