@@ -3,7 +3,6 @@ import Hero from "../components/Hero.jsx";
 import Services from "../components/Services.jsx";
 import Awards from "../components/Awards.jsx"
 import CTA from "../components/CTA.jsx";
-import CalendlyEmbed from "../components/CalendlyEmbed.jsx";
 import Footer from "../components/Footer.jsx";
 import FloatingChat from "../components/FloatingChat.jsx";
 import { CONTACT } from "../lib/links.js";
@@ -25,7 +24,7 @@ export default function Home() {
         <Services />
         <Awards />
         <CTA />
-        <CalendlyEmbed url={CONTACT.calendly} />
+        
       </main>
       <Footer />
       <FloatingChat />

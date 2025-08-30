@@ -1,12 +1,29 @@
 "use client";
-import { waLink, igLink, mailLink } from "@/lib/links";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 export default function FloatingChat() {
   return (
-    <div className="fixed right-4 bottom-4 flex flex-col gap-2 z-50">
-      <a href={waLink()} className="rounded-full p-4 bg-green-500 text-white shadow-soft" aria-label="Chat on WhatsApp">🟢</a>
-      <a href={igLink()} className="rounded-full p-4 bg-pink-500 text-white shadow-soft" aria-label="Instagram DM">📸</a>
-      <a href={mailLink()} className="rounded-full p-4 bg-gray-900 text-white shadow-soft" aria-label="Email">✉️</a>
+    <div className="fixed right-5 bottom-5 flex flex-col gap-4 z-50">
+      {/* WhatsApp */}
+      <a
+        href="https://wa.me/917993909809" // replace with your WhatsApp number
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition"
+      >
+        <FaWhatsapp size={28} />
+      </a>
+
+      {/* Instagram */}
+      <a
+        href="https://instagram.com/____sharuk__" // replace with your Instagram page
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-pink-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition"
+      >
+        <FaInstagram size={28} />
+      </a>
     </div>
   );
 }
+
